@@ -591,7 +591,7 @@ var infobind = function(){
     $('#pcode-send').click(function(){
         var tel = $('#tel').val();
         var pcode = $('#pcode').val();
-        if(!(/^1[3456789]\d{9}$/.test(tel))){
+        if(!(/^(0[3|5|7|8|9])+([0-9]{8})$/.test(tel))){
             layer.tips('请输入正确的手机号','#dialog-setting-tel input[name=tel]',{tips: 1});
             $('#tel').focus();
             return false;
@@ -684,7 +684,7 @@ var infobind = function(){
             yes: function(idx) {
                 var tel = $('#dialog-setting-tel input[name=tel]').val();
                 var tcode = $('#dialog-setting-tel input[name=tcode]').val();
-                if(!(/^1[3456789]\d{9}$/.test(tel))){
+                if(!(/^(0[3|5|7|8|9])+([0-9]{8})$/.test(tel))){
                     layer.tips('请输入正确的手机号码','#dialog-setting-tel input[name=tel]',{tips: 1});
                     return;
                 }
@@ -724,7 +724,7 @@ var infobind = function(){
             yes: function(idx) {
                 var tel = $('#dialog-setting-tel input[name=tel]').val();
                 var tcode = $('#dialog-setting-tel input[name=tcode]').val();
-                if(!(/^1[3456789]\d{9}$/.test(tel))){
+                if(!(/^(0[3|5|7|8|9])+([0-9]{8})$/.test(tel))){
                     layer.tips('请输入正确的手机号码','#dialog-setting-tel input[name=tel]',{tips: 1});
                     return;
                 }

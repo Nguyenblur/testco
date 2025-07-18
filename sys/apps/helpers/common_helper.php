@@ -254,7 +254,7 @@ function is_email($email) {
 }
 //判断手机号码格式是否正确
 function is_tel($tel) {
-	return preg_match("/^1[3456789]\d{9}$/", $tel);
+    return preg_match("/^(0[3|5|7|8|9])+([0-9]{8})$/", $tel);
 }
 //编码转换
 function get_bm($string,$s1='gbk',$s2='utf-8') {
